@@ -7,5 +7,5 @@ resource "random_id" "whatever" {
 }
 
 output "random" {
-  value = random_id.whatever.hex
+  value = "workspace 2: ${random_id.whatever.hex}"
 }
